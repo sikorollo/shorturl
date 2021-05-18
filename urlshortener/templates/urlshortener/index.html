@@ -1,0 +1,28 @@
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css'%}" />
+<h1>URL Shortner Application</h1>
+    </div>
+      <form method="POST">
+        {% csrf_token %}
+          {{form.user_url}}
+            <button type="submit" class="button">
+              Short Now
+            </button>
+      </form>
+  </div>
+  {% if errors %}
+  <div role="alert">
+    <p>{{errors}}</p>
+  </div>
+  {% endif %}
+
+  {% if new_url %}
+
+    <h2 >Your shortened Url</h2>
+    <p class="">{{new_url}}</p>
+    <p><span >Your previous URL:</span> {{user_url}}</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock body %}

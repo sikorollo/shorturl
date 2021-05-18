@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 150%;
+  line-height: 1.4;
+}
+
+body {
+  min-height: 100vh;
+  place-items: center;
+  background: linear-gradient(135deg, hsl(180, 70%, 50%), hsl(200, 75%, 25%));
+  justify-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input,
+button {
+  font: inherit;
+  border: 0;
+}
+
+input,
+button:focus {
+  outline: none;
+}
+form {
+  display: flex;
+  grid-column: 2;
+  max-width: 500px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 0.5em 0.75em;
+}
+
+button {
+  padding: 0.5em 0.75em;
+  background: #9dee91;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c0f4b8;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  grid-column: 2;
+}
